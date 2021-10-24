@@ -50,4 +50,6 @@
 #define BUTTON_GET_STATE		GPIOA_IDR_REG & (1<<3)
 
 
+enum EDGE_TYPE {NONE=0, RISE=1, FALL=2};
+
 #endif /* ASSIGNMENT_H_ */
