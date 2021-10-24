@@ -47,9 +47,11 @@
 
 #define LED_OFF					GPIOA_BRR_REG |= (1<<4)
 
-#define BUTTON_GET_STATE		GPIOA_IDR_REG & (1<<3)
+#define BUTTON_GET_STATE		(uint32_t)(GPIOA_BASE_ADDR+0x10U) & (1<<3)
 
 
 enum EDGE_TYPE {NONE=0, RISE=1, FALL=2};
+
+enum EDGE_TYPE edgeDetect(uint8_t pin_state, uint8_t samples);
 
 #endif /* ASSIGNMENT_H_ */

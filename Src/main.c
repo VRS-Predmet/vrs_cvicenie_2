@@ -3,6 +3,11 @@
 #include "main.h"
 #include "assignment.h"
 
+int check1 = BUTTON_GET_STATE;
+int check2 = 0;
+int count = 0;
+int state = 5;
+
 int main(void)
 {
   /*
@@ -60,20 +65,21 @@ int main(void)
 
   while (1)
   {
-	  if (!(BUTTON_GET_STATE))
+	  /*switch (state)
+	  	  {
+	  	  case SWITCH_ON:
+	  		  LED_ON();
+	  		  break;
+	  	  case SWITCH_OFF:
+	  		  LED_OFF();
+	  		  break;
+	  	  }*/
+
+	  if (edgeDetect(BUTTON_GET_STATE, state) == RISE)
 	  {
-		  LL_mDelay(250); // 0.25s delay
 		  LED_ON;
-		  LL_mDelay(250); // 0.25s delay
-		  LED_OFF;
 	  }
-	  else
-	  {
-		  LL_mDelay(1000);  // 1s delay
-		  LED_ON;
-		  LL_mDelay(1000);   // 1s delay
-		  LED_OFF;
-	  }
+
   }
 
 }
@@ -92,6 +98,29 @@ void Error_Handler(void)
   /* User can add his own implementation to report the HAL error return state */
 
   /* USER CODE END Error_Handler_Debug */
+}
+
+enum EDGE_TYPE edgeDetect(uint8_t pin_state, uint8_t samples)
+{
+	/* chceny stav */
+	if ((pin_state == check1) && (pin_state == 1))
+	{
+		count++;
+	}
+	else if((pin_state = check1) && (pin_state == 0))
+	{
+		check2++;
+	}
+
+	if (count = samples)
+	{
+		return RISE;
+	}
+
+	if (check2 = samples)
+		{
+			return FALL;
+		}
 }
 
 #ifdef  USE_FULL_ASSERT
