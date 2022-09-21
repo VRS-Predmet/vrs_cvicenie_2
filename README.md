@@ -1,11 +1,11 @@
 # Náplň cvičenia
-- pokračovť v plnení úloh z predchádzajúceho cvičenia (vrs_cvicenie_2)
+- pokračovť v plnení úloh z predchádzajúceho cvičenia (vrs_cvicenie_1)
 - predstavenie nového zadania
 - konzultácie
 
 
 # Zadanie
-- #### Toto zadanie priamo nadväzuje na zadanie z predchádzajúceho cvičenia - zadanie_cv2. Vytvorte aplikáciu pre detegovanie hrany vstupného signálu privedeného na vstup MCU pričom LED pripojená na jeho výstup bude indikovať úspešnú detekciu hrany. Vstupný signál je privedený na pin GPIOA-3. Hrana je generovaná prostredníctvom tlačidla. Výstupný signál je privedený na pin GPIOA-4.
+- #### Toto zadanie priamo nadväzuje na zadanie z predchádzajúceho cvičenia - zadanie_cv1. Vytvorte aplikáciu pre detegovanie hrany vstupného signálu privedeného na vstup MCU pričom LED pripojená na jeho výstup bude indikovať úspešnú detekciu hrany. Vstupný signál je privedený na pin GPIOA-3. Hrana je generovaná prostredníctvom tlačidla. Výstupný signál je privedený na pin GPIOA-4.
 
 ### Úlohy:
  1. #### Vytvoriť repozitár, kde nahrajete svoj projekt z predchádzajúceho zadania.
@@ -25,9 +25,7 @@ EDGE_TYPE edgeDetect(uint8_t pin_state, uint8_t samples);
    
 5. #### Upraviť program vykonávajúci sa v "main" funkcii tak, aby LED zmenila svoj stav (On -> Off, Off -> On) len vtedy, ak bol detegovaný vami zvolený typ hrany. LED bude meniť svoj stav len ak bola detegovaná nábežná hrana alebo bude meniť svoj stav len v prípade detekcie dobežnej hrany. 
 
-
-6. #### Odovzdáva sa odkaz k vašemu repozitáru.
  
  <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/documents/edge_detect.png" width="2000" height="250" title="LED, button and Stm32 - circuit.">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_1/blob/master/documents/edge_detect.png" width="2000" height="250" title="LED, button and Stm32 - circuit.">
 </p>
