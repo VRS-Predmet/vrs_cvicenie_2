@@ -61,7 +61,7 @@
 
 
 
-# Zadanie
+# Zadanie 2 (4b)
 - #### Toto zadanie priamo nadväzuje na zadanie z predchádzajúceho cvičenia - zadanie_cv1. Vytvorte aplikáciu pre detegovanie hrany vstupného signálu privedeného na vstup MCU pričom LED pripojená na jeho výstup bude indikovať úspešnú detekciu hrany. Vstupný signál je privedený na pin GPIOA-3. Hrana je generovaná prostredníctvom tlačidla. Výstupný signál je privedený na pin GPIOA-4.
 
 ### Úlohy:
