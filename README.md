@@ -65,10 +65,8 @@
 - #### Toto zadanie priamo nadväzuje na zadanie z predchádzajúceho cvičenia - zadanie_cv1. Vytvorte aplikáciu pre detegovanie hrany vstupného signálu privedeného na vstup MCU pričom LED pripojená na jeho výstup bude indikovať úspešnú detekciu hrany. Vstupný signál je privedený na pin GPIOA-3. Hrana je generovaná prostredníctvom tlačidla. Výstupný signál je privedený na pin GPIOA-4.
 
 ### Úlohy:
- 1. #### Vytvoriť repozitár, kde nahrajete svoj projekt z predchádzajúceho zadania.
- 2. #### Pracovať s vlastným repozitárom tak, aby boli vydieť "commits" (editačné zmeny). Ideálne od celej dvojice.
- 3. #### V súbore "Inc/assignment.h" definovať enum "EDGE_TYPE", ktorý bude enumerovať 3 stavy: žiadna hrana (NONE = 0), nábežná hrana (RISE = 1), dobežná hrana (FALL = 2).
- 4. #### V súbore "Inc/assignment.h" deklarujte a v subore "Src/main.c" definujte funkciu "edgeDetect", ktorej úlohou je detegovať hranu (stlačenie tlačidla). Funkcia vracia hodnotu typu "EDGE_TYPE" a má dva vstupné argumenty:
+ 1. #### V súbore "Inc/assignment.h" definovať enum "EDGE_TYPE", ktorý bude enumerovať 3 stavy: žiadna hrana (NONE = 0), nábežná hrana (RISE = 1), dobežná hrana (FALL = 2).
+ 2. #### V súbore "Inc/assignment.h" deklarujte a v subore "Src/main.c" definujte funkciu "edgeDetect", ktorej úlohou je detegovať hranu (stlačenie tlačidla). Funkcia vracia hodnotu typu "EDGE_TYPE" a má dva vstupné argumenty:
  
 ```javascript
 EDGE_TYPE edgeDetect(uint8_t pin_state, uint8_t samples);
