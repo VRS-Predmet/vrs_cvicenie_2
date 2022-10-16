@@ -8,32 +8,32 @@
 ### 1. vytvorenie nového STM32 projektu
 
 <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_5/blob/master/images/novy_projekt.png" width="500">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/novy_projekt.png" width="500">
 </p>
 
 ### 2. zvolenie typu MCU, ktorý chceme programovať (STM32F303K8)
 
 <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_5/blob/master/images/vyber_MCU.png" width="500">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/vyber_MCU.png" width="500">
 </p>
 
 ### 3. zvolenie názvu projektu (všetko ostatné je už dobre nastavené od začiatku)
 
 - projekt je týmto krokom vytvorený a prechádza sa do prostredia CubeMX, kde sa konfigurujú periférie MCU
 <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_5/blob/master/images/vyber_nazvu.png" width="350">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/vyber_nazvu.png" width="350">
 </p>
 
 ### 4. konfigurácia periférii MCU
 
 - nastavenie funkcie GPIO alebo ich priradenie k periférii (podľa potreby)
 <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_5/blob/master/images/konfiguracia_periferii.png" width="300">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/konfiguracia_periferii.png" width="300">
 </p>
 
 - konfigurácia konkrétnych GPIO, ktoré boli zvolené v predošlom kroku
 <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_5/blob/master/images/konfiguracia_periferii_2.PNG" width="750">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/konfiguracia_periferii_2.PNG" width="750">
 </p>
 
 - v nastaveniach hodín (clock configuration) nie je nutná žiadna zmena, pretože nám stačí počiatočná konfigurácia
@@ -44,19 +44,19 @@
 
 - pre každú použitú perifériu bude vygenerovaný ".c" a ".h" súbor
 <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_5/blob/master/images/nastavenie_generovania_3.PNG" width="450">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/nastavenie_generovania_3.PNG" width="450">
 </p>
 
 - zvolenie "LL - low level" knižnice
 <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_5/blob/master/images/nastavenie_generovania_2.PNG" width="650">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/nastavenie_generovania_2.PNG" width="650">
 </p>
 
 ### 6. generovanie kódu
 
 - vygenerovanie kódu
 <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_5/blob/master/images/code_generation.png" width="500">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/code_generation.png" width="500">
 </p>
 
 
@@ -82,5 +82,5 @@ EDGE_TYPE edgeDetect(uint8_t pin_state, uint8_t samples);
 
  
  <p align="center">
-    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_1/blob/master/documents/edge_detect.png" width="2000" height="250" title="LED, button and Stm32 - circuit.">
+    <img src="https://github.com/VRS-Predmet/vrs_cvicenie_2/blob/master/images/edge_detect.png" width="2000" height="250" title="LED, button and Stm32 - circuit.">
 </p>
