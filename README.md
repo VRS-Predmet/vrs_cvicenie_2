@@ -1,6 +1,7 @@
 # Náplň cvičenia
 - s pomocou CubeMX vytvoriť nový projekt a nastaviť počiatočnú konfiguráciu mikrokontrolera
-- v názve adresy kam vytvárame projektu sa nesmie nachádzať diakritika ani medzery (može to sposobovať problemy)!
+- v názve adresy, kde vytvárame projekt, sa nesmie nachádzať diakritika ani medzery (može to sposobovať problemy)!
+- projekt nevytvárať v priečinku, ktorý je určený ako pracovný priestor (workspace) CubeIDE
 - pokračovť v plnení úloh z predchádzajúceho cvičenia (vrs_cvicenie_1)
 - predstavenie nového zadania
 
