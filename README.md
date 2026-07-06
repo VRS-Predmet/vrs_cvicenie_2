@@ -65,7 +65,7 @@
 
 ### Úlohy:
  1. #### V súbore "Inc/assignment.h" definovať enum "EDGE_TYPE", ktorý bude enumerovať 3 stavy: žiadna hrana (NONE = 0), nábežná hrana (RISE = 1), dobežná hrana (FALL = 2).
- 2. #### V súbore "Inc/assignment.h" deklarujte a v subore "Src/main.c" definujte funkciu "edgeDetect", ktorej úlohou je detegovať hranu (stlačenie tlačidla). Funkcia vracia hodnotu typu "EDGE_TYPE" a má dva vstupné argumenty:
+ 2. #### V súbore "Inc/assignment.h" deklarujte a v subore "Src/main.c" definujte funkciu "edgeDetect", ktorej úlohou je detegovať hranu (stlačenie tlačidla). Funkcia vracia hodnotu typu "EDGE_TYPE" a má dva vstupné argumenty (2 body):
  
 ```javascript
 EDGE_TYPE edgeDetect(uint8_t pin_state, uint8_t samples);
@@ -77,7 +77,7 @@ EDGE_TYPE edgeDetect(uint8_t pin_state, uint8_t samples);
     - aby bola detegovaná hrana, musí sa 5-krát v rade prečítať rovnaký stav tj. 0,1,1,1,1,1 - nábežná hrana bola detegovaná
     - ak by pri čítaní zo vstupného pinu nastala situácia 0,1,1,1,0,1 - pri zmene stavu z 0 na 1 sa na vstupe vyčítala hodnota 1 len 3-krát v rade, vyhodnotí sa to ako "žiadna hrana", pretože nebola splnená podmienka.
    
-3. #### Upraviť program vykonávajúci sa v "main" funkcii tak, aby LED zmenila svoj stav (On -> Off, Off -> On) len vtedy, ak bol detegovaný vami zvolený typ hrany. LED bude meniť svoj stav len ak bola detegovaná nábežná hrana alebo bude meniť svoj stav len v prípade detekcie dobežnej hrany. 
+3. #### Upraviť program vykonávajúci sa v "main" funkcii tak, aby LED zmenila svoj stav (On -> Off, Off -> On) len vtedy, ak bol detegovaný vami zvolený typ hrany. LED bude meniť svoj stav len ak bola detegovaná nábežná hrana alebo bude meniť svoj stav len v prípade detekcie dobežnej hrany (1 bod). 
 
  
  <p align="center">
